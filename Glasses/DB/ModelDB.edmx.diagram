@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a59f5eb1f66a43b78115d99df26a9e08" Name="Diagram1">
+        <EntityTypeShape EntityType="DemoPrepareModel.Agent" Width="1.5" PointX="3" PointY="10.25" />
+        <EntityTypeShape EntityType="DemoPrepareModel.AgentPriorityHistory" Width="1.5" PointX="5.25" PointY="21.875" />
+        <EntityTypeShape EntityType="DemoPrepareModel.AgentType" Width="1.5" PointX="0.75" PointY="11.375" />
+        <EntityTypeShape EntityType="DemoPrepareModel.Material" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="DemoPrepareModel.MaterialCountHistory" Width="1.5" PointX="5.25" PointY="18.875" />
+        <EntityTypeShape EntityType="DemoPrepareModel.MaterialType" Width="1.5" PointX="0.75" PointY="4.125" />
+        <EntityTypeShape EntityType="DemoPrepareModel.Product" Width="1.5" PointX="3" PointY="5.875" />
+        <EntityTypeShape EntityType="DemoPrepareModel.ProductCostHistory" Width="1.5" PointX="5.25" PointY="12.5" />
+        <EntityTypeShape EntityType="DemoPrepareModel.ProductMaterial" Width="1.5" PointX="5.25" PointY="6.625" />
+        <EntityTypeShape EntityType="DemoPrepareModel.ProductSale" Width="1.5" PointX="5.25" PointY="3.375" />
+        <EntityTypeShape EntityType="DemoPrepareModel.ProductType" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="DemoPrepareModel.Shop" Width="1.5" PointX="5.25" PointY="9.625" />
+        <EntityTypeShape EntityType="DemoPrepareModel.Supplier" Width="1.5" PointX="5.25" PointY="15.75" />
+        <EntityTypeShape EntityType="DemoPrepareModel.sysdiagram" Width="1.5" PointX="7.75" PointY="3.25" />
+        <AssociationConnector Association="DemoPrepareModel.FK_Agent_AgentType" />
+        <AssociationConnector Association="DemoPrepareModel.FK_AgentPriorityHistory_Agent" />
+        <AssociationConnector Association="DemoPrepareModel.FK_ProductSale_Agent" />
+        <AssociationConnector Association="DemoPrepareModel.FK_Shop_Agent" />
+        <AssociationConnector Association="DemoPrepareModel.FK_Material_MaterialType" />
+        <AssociationConnector Association="DemoPrepareModel.FK_MaterialCountHistory_Material" />
+        <AssociationConnector Association="DemoPrepareModel.FK_ProductMaterial_Material" />
+        <AssociationConnector Association="DemoPrepareModel.FK_Product_ProductType" />
+        <AssociationConnector Association="DemoPrepareModel.FK_ProductCostHistory_Product" />
+        <AssociationConnector Association="DemoPrepareModel.FK_ProductMaterial_Product" />
+        <AssociationConnector Association="DemoPrepareModel.FK_ProductSale_Product" />
+        <AssociationConnector Association="DemoPrepareModel.MaterialSupplier" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
